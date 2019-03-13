@@ -1,0 +1,27 @@
+{
+  "name": "musify",
+  "version": "1.0.0",
+  "description": "app de musica",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-multiparty": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jwt-simple": "^0.5.5",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.13",
+    "mongoose-pagination": "^1.0.0",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Fleury Escudero",
+  "license": "ISC"
+}
