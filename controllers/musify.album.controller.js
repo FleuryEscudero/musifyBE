@@ -25,15 +25,15 @@ function getAlbum (req, res) {
 
 function getAlbums (req,res){
     
-    var albumId = req.params.album;
+    var artistId = req.params.artist;
 
-        if (!albumId){
+        if (!artistId){
             var find = Album.find({}).sort('title');
         }else {
-            var find = Album.find({album: albumId}).sort('year'); 
+            var find = Album.find({artist: artistId}).sort('year'); 
         }
 
-        find.populate({path:'album'}).exec((err,albums) => {
+        find.populate({path:'artist'}).exec((err,albums) => {
             if (err){
                 res.status(500).send({message: ' Error en la petición'});
             }else {
